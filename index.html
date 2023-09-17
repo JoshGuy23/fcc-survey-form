@@ -3,9 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Kamen Rider Fan Club Survey Form</title>
 </head>
 <body>
-
+    <h1 id="title">Kamen Rider Fan Club Survey Form</h1>
+    <p id="description">We would like to know about your experience with the Kamen Rider franchise!</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label" for="email">Email Address: <input id="email" type="email" required placeholder="Enter your email address"/></label>
+        <label id="number-label" for="number">Age (optional): <input id="number" type="number" placeholder="Enter your age" min="13" max="120"/></label>
+    </form>
 </body>
 </html>
