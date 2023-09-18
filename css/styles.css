@@ -1,1 +1,85 @@
-﻿
+﻿#name, #email, #number, #dropdown, textarea, label
+{
+    display: block;
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.click {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    text-align: left;
+}
+
+textarea {
+    height: 80px;
+}
+
+.label
+{
+    margin-top: 10px;
+}
+
+body::before 
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body 
+{
+    font-family: Tahoma, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: auto;
+}
+
+h1, p, .label, #name-label {
+    color: white;
+    text-align: center;
+}
+
+*, *::before, *::after 
+{
+    box-sizing: border-box;
+}
+
+p 
+{
+    font-size: 1.1rem;
+}
+
+
+
+label {
+    vertical-align: middle;
+}
+
+.option
+{
+    color: white;
+}
