@@ -1,38 +1,4 @@
-﻿#name, #email, #number, #dropdown, textarea, label
-{
-    display: block;
-}
-
-input, textarea, select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-}
-
-form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
-}
-
-.click {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-    text-align: left;
-}
-
-textarea {
-    height: 80px;
-}
-
-.label
-{
-    margin-top: 10px;
-}
-
+﻿/*This section puts a background image into the website's body.*/
 body::before 
 {
     content: '';
@@ -42,13 +8,13 @@ body::before
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--color-darkblue);
     background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+/*Establish fonts and margins for the body.*/
 body 
 {
     font-family: Tahoma, Helvetica, sans-serif;
@@ -58,28 +24,69 @@ body
     margin: auto;
 }
 
-h1, p, .label, #name-label {
-    color: white;
-    text-align: center;
-}
-
-*, *::before, *::after 
-{
-    box-sizing: border-box;
-}
-
+/*Adjust font size for paragraph items.*/
 p 
 {
     font-size: 1.1rem;
 }
 
+/*Center main text portions and color them white for visiblity.*/
+h1, p, .label, #name-label 
+{
+    color: white;
+    text-align: center;
+}
 
+/*Establish sizes for form elements.*/
+form 
+{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
 
-label {
+/*Vertically align the label elements*/
+label 
+{
     vertical-align: middle;
 }
 
-.option
+/*Add margins to specific label elements*/
+.label 
 {
+    margin-top: 10px;
+}
+
+/*Display the various form elements as block elements.*/
+#name, #email, #number, #dropdown, textarea, label
+{
+    display: block;
+}
+
+/*Properly align radio buttons and checkboxes.*/
+.click 
+{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/*Color the labels for the radio buttons and checkboxes.*/
+.option {
     color: white;
+}
+
+/*Set sizes for input areas.*/
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+/*Set height of textarea element.*/
+textarea {
+    height: 80px;
 }
